@@ -23,6 +23,7 @@ This template contains a simple Food Tracker App based off of the [Start Develop
 
 # Useful Links
 [PDF Report](http://surl.li/cmayg)
+
 [Video Report](http://surl.li/cmaxe)
 
 Enjoy! :smile: 
