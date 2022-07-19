@@ -21,6 +21,7 @@ you through everything you need to get up and running.
 ## What's contained in this project
 
 this project contains
+
 -swift lint scripts
 
 -fastlane scripts for process automation and distribution in firebase builds
