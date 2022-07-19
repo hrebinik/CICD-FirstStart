@@ -67,27 +67,23 @@ You can find instructions to get up gitlab-runner on the report and offitial doc
 Enjoy! :smile: 
 
 # CI/CD
-
-###### CI / CD - DevOps practices that allows developers to deploy software changes more often and more
-
-###### reliably, minimize errors, increase build rates and improve the quality of the product being developed.
-
+```
+CI / CD - DevOps practices that allows developers to deploy software changes more often and more reliably, minimize errors, increase build rates and improve the quality of the product being developed.
+```
 
 ### What exactly CI/CD mean?
-
+```
 CI/CD - concept that is implemented as a pipeline, making it easy to merge newly committed code into the main codebase.
 
 Allows you to run different types of tests at each stage (execution of the **integration** aspect) and complete it with the deployment of the
 committed code into the actual product that end users see (execution **of delivery** ).
 
-```
 ● Continuous integration
-```
-```
-● Continuous delivery
-```
-###### ● Continuous deployment
 
+● Continuous delivery
+
+● Continuous deployment
+```
 
 ### Continuous integration
 
@@ -98,9 +94,8 @@ regular schedule. The end goal of a build is to be deployed
 somewhere, and the main goal of Continuous Integration is to build
 and publish that deployable unit.
 ```
-```
-Continuous integration requires
-```
+###### Continuous integration requires
+
 ```
 ● Developers to merge their changes to the main code branch
 many times per day.
@@ -108,25 +103,22 @@ many times per day.
 sequence. Developers ideally receive results in less than 10
 minutes, so that they can stay focused on their work.
 ```
-```
-A release candidate - final form of an artifact to be deployed.
-```
-```
-Three pillars that Continuous Integration solves for is having the
-builds be repeatable, consistent, and available.
-```
+###### A release candidate - final form of an artifact to be deployed.
+
+###### Three pillars that Continuous Integration solves for is having the builds be repeatable, consistent, and available.
 
 ### Continuous delivery
-
+```
 **The goal** of continuous delivery is to deliver a packaged artifact into a production environment. CD automates the entire delivery
 process, including the deployment process.
-
+```
+```
 **Continuous Delivery** (CD) is a practice of automating the entire software release process. The idea is to do CI, **plus** automatically
 prepare and track a release to production. The desired outcome is that anyone with sufficient privileges to deploy a new release can do
 so at any time in one or a few clicks. By eliminating nearly all manual tasks, developers become more productive.
-
--Continuous delivery is the process of automating steps to safely make changes to the production environment
--Continuous delivery is the practice of ensuring that software is always ready for deployment
+```
+###### Continuous delivery is the process of automating steps to safely make changes to the production environment
+###### Continuous delivery is the practice of ensuring that software is always ready for deployment
 
 
 ### Continuous deployment
@@ -136,24 +128,18 @@ Continuous Deployment is another step beyond Continuous Integration, similar to 
 instead of deploying your application manually, you set it to be deployed automatically. Human intervention is not required.
 ```
 
-### Deeper look into the CI/CD workflow
-
-
 ### Quick summary and final thoughts
 
-#### ● Continuous Integration (CI) : short-lived feature branches, team is merging to master branch multiple times per day, fully^
-
-```
-automated build and test process which gives feedback within 10 minutes; deployment is manual.
-● Continuous Delivery (CD) : CI + the entire software release process is automated, it may be composed of multiple stages, and
+###### ● Continuous Integration (CI) : short-lived feature branches, team is merging to master branch multiple times per day, fully automated build and test process which gives feedback within 10 minutes; deployment is manual.
+###### ● Continuous Delivery (CD) : CI + the entire software release process is automated, it may be composed of multiple stages, and
 deployment to production is manual.
-● Continuous Deployment : CI + CD + fully automated deployment to production.
-```
+###### ● Continuous Deployment : CI + CD + fully automated deployment to production.
+
 
 ### Comparison of deployment cycles
 
-#### Manual^
-
+#### Manual
+```
 1. Check out source code from some remote repository
     (GitHub, Bitbucket, GitLab, etc.).
 2. Do some static analysis of the code using SwiftLint,
@@ -165,9 +151,8 @@ deployment to production is manual.
 5. Code signing and archive your app.
 6. Submit your app to iTunes Connect.
 7. Notify users about your release.
-
 ```
-CI/CD
+####  CI/CD
 ```
 1. The developer writes the code, conducts initial testing
     to ensure there are no bugs, and commits the
@@ -186,23 +171,21 @@ CI/CD
 6. Requests for fixing defects and bugs are collected, the
     developer makes changes to the code, and the
     process is repeated.
-
+```
 
 ### When to use ci/cd processes? - always?
-
 ###### No need to use if:
 
-```
-● When there is no need for automation. If it's a small company or a startup where two people are deploying, they don't
+###### ● When there is no need for automation. If it's a small company or a startup where two people are deploying, they don't
 need CI/CD yet. It's worth waiting until the project grows to the point where it needs automation, and implementing
 CI/CD will bring more pros than cons.
-```
-```
-● When there are archaic methods in the company. For example, some state-owned companies use software that is
+
+###### ● When there are archaic methods in the company. For example, some state-owned companies use software that is
 more than 10-15 years old and is already in some kind of iteration. In such a situation, it is problematic to set up
 automatic delivery, and it is easier for the developer to manually make changes to the production server.
-```
-###### Deploy - routine task Manual deploy - antipattern
+
+###### Deploy - routine task 
+###### Manual deploy - antipattern
 
 
 ### The top benefits of CI/CD for iOS
@@ -286,7 +269,7 @@ Store.
 
 ### Some Tips:
 
-(^) **To make CI/CD a reality, you need to automate everything that you can in the software delivery process and run it in a CI/CD
+**To make CI/CD a reality, you need to automate everything that you can in the software delivery process and run it in a CI/CD
 pipeline.**
 ● **Architect the system in a way that supports iterative releases**. Avoid tight coupling between components. Implement
 metrics that help detect issues in real-time.
@@ -303,9 +286,9 @@ they build. This breaks down the silos between traditional developers and operat
 high-level goals.
 
 
-##### Main advantages / disadvantages of CI/CD
+### Main advantages / disadvantages of CI/CD
 
-(^)
+###### Advantages
 ● high speed of output of new functionality from the client's
 request to commissioning;
 ● the possibility of choosing the best option due to operational
@@ -321,6 +304,8 @@ organization;
 ● reducing manual testing and providing the ability to return to a
 previous version of the product in case of problems with the
 current build.
+
+###### Disadvantages
 ● maintenance of CI/CD tools is an expensive investment;
 ● changes create a domino effect.
 ● One small change with CI/CD can affect several different
@@ -339,23 +324,18 @@ basically impossible
 ● CI/CD assumes that any changes are communicated to users as
 quickly as possible. In this case, for example, the support service
 is practically not notified of upcoming changes and may not be
+able to cope with customer questions and complaints.
 
-1. able to cope with customer questions and complaints.
-2.
-
+### Platform selection
 
 ● **Self-hosted CI/CD solutions** require owning
 hardware and setting up infrastructure.
 Maintenance becomes a big endeavor.
 
-### Platform selection
-
 ● **Cloud-based CI/CD tools** are easy to set up and all
 the hardware and software maintenance is managed
 by the service provider.
 
-
-### Platform selection
 
 ```
 ● Atlassian Bamboo , GitHub Actions and GitLab CI are not as mobile friendly as Bitrise ,
@@ -388,7 +368,7 @@ curation of their plugin library.
 needing some of the more complex configuration options provided by some "installed" services.
 ```
 
-### Announcement
+### Xcode Cloud
 
 **Xcode Cloud** is a CI/CD system that uses Git for source code management and provides you with an integrated system to ensure the
 quality and stability of your codebase. It also helps you publish apps efficiently. By combining Xcode with Apple's cloud-based code building
@@ -403,8 +383,8 @@ Generate and test your code automatically.
 ● Collaborate on your software development using Xcode and Apple's cloud infrastructure.
 ```
 
+### Fastlane
 ```
-Fastlane + Bitrise
 Fastlane is a powerful tool used for automated deployment to simplify deployments for mobile platforms. It is simple and easy to
 use but brings amazing value to your regular ios deployment workflows.
 Allows automating every aspect of the build packaging and distribution process and it's an Open-source published under MIT
@@ -412,72 +392,61 @@ License.
 Supports all major CI Platforms like Bitrise, Jenkins, CircleCI, Travis, GitLab CI, Azure DevOps, etc.
 Fastlane is a ruby gem, hence runs on the local machine, no server needed https://rubygems.org/gems/fastlane
 ```
-### Announcement
-
-
-### Fastlane
 
 
 
 ### Gitlab CI Concepts
 
-###### Jobs^
-
+###### Jobs
+```
 Jobs are a fundamental element in a GitLab pipeline. A job
 defines a task that the pipeline must perform, such as compiling
 or testing code. Each job has a name and contains a script
 clause that defines what's to be done. If all jobs on a stage
 complete successfully, the pipeline moves on to the next stage.
+```
 
-**Stages**
-
+###### Stages
+```
 GitLab stages determine when to run jobs. A stage represents
 different steps in a CI/CD pipeline such as building, testing or
 deploying an application. Examples of stages include plan,
 create, verify, configure and release.
-
 ```
-Runners
+
+###### Runners
+```
 Runners are agents or applications that run CI/CD pipeline jobs from
 GitLab. You can use GitLab Runners or use Linux, Windows or macOS
 runners. Runners process jobs on the machine where they are
 installed, but can also run in containers or Kubernetes clusters.
 In general, pipelines are executed automatically and require no
 intervention once created. However, there are also times when you can
-manually interact with a pipeline. Learn about the types of CI/CD
+manually interact with a pipeline.
 ```
-###### pipelines.
 
-**Pipeline**
-
+###### Pipeline
+```
 A pipeline in GitLab is a collection of stages, each containing one
 or more jobs. GitLab has different types of pipelines including
 basic, merge, parent-child and multi-project pipelines.
-
-**Commit**
-
+```
+###### Commit
+```
 A commit is a record of a change, such as a code or a file
 change. For example, if you have changed a file stored in a
-
-###### repository, you commit the change to record the alteration.
-
-
+repository, you commit the change to record the alteration.
+```
+### Pipeline Rules
 1. Pipelines consist of **stages** , and they, in turn, consist of **jobs**
 2. Each **job** can only have one **stage**
 3. Each stage can contain several **jobs** that run sequentially and in parallel. So if you have multiple runners, then **test_job1** and
 **test_job2** would start almost at the same time without waiting for each other to complete
-
-### Pipeline Rules
-
 4. **Stages** go only sequentially, each waits for the completion of all **jobs** from the previous **stage** before starting
 5. If the exit command was called with a non-zero error while executing the job, then the job fails: **exit 0** means that the job was
 successfully completed; any other number will indicate some kind of error
 6. If one of the jobs in the stage fails without the **allow_failure: true** flag, then the next stage does not start. For **test_job3** this flag is
 enabled, but not for **test_job5**
-
-
-### Pipeline Rules
-
 7. If there are several jobs in the stage and one of them fails, then the
 other jobs of the stage continue execution
 8. You can write coverage in different jobs. For example, in job 1 we
@@ -497,93 +466,112 @@ file, the earlier they will be executed in the pipeline
 
 
 ### Workflow
-
+```
 ● Make changes to your
 codebase and commit to
 GitLab.
+```
+```
 ● GitLab recognizes that the
 codebase has changed.
+```
+```
 ● GitLab runs the build using the
 GitLab Runner you set up on
 your Mac.
-
+```
+```
 ● GitLab Runner executes the
 build and test process you
 specified in the .yml file script.
 (It depends entirely on your
 scenario)
+```
+```
 ● GitLab Runner reports its
 results back to the GitLab
 server, and Gitlab shows you
 the build result.
+```
 
 
 ### Gitlab Jobs
 
-###### extends - needed to reuse basic things;
+###### extends 
+``` 
+needed to reuse basic things;
+```
+###### stage
+```
+indicate in which stage the job is involved. Within one stage, they are executed in parallel;
+```
 
+###### before script, script, after script -
 ```
-stage - indicate in which stage the job is involved.
+ a set of Shell commands in the order in which they are executed;
 ```
-###### Within one stage, they are executed in parallel;
 
+###### only/except 
 ```
-before script, script, after script - a set of Shell
-commands in the order in which they are executed;
+describe which rules the job falls / definitely does not fall under
 ```
+###### artifacts 
 ```
-only/except - describe which rules the job falls /
-definitely does not fall under;
+we will use jobs to store artifacts.
 ```
-###### artifacts - we will use jobs to store artifacts.
+###### tags 
+```
+tags with which we marked the runner when we registered it
+```
+###### allow failure 
+```
+a property that allows / does not allow a faked job, valid exit codes can be specified here
+```
 
-```
-tags - tags with which we marked the runner when
-```
-###### we registered it;
 
-```
-allow failure - a property that allows / does not
-allow a faked job, valid exit codes can be specified
-here;
-```
 
 ### Gitlab-runner
 
 **Install gitlab-runner on mac:**
-_brew install gitlab-runner_
+```
+brew install gitlab-runner
+```
 
 **Making mac a CI runner:**
-_gitlab-runner register_
-
-
-### Gitlab-runner
+```
+gitlab-runner register
+```
 
 **Launching the runner:**
-
+```
 gitlab-runner install
-
+```
+```
 gitlab-runner start
-
-
-### Gitlab-runner
-
 ```
-Status:
+
+**Status::**
 ```
-###### gitlab-runner status
+gitlab-runner status
+```
+
+
 
 
 ### Gitlab-runner configuration
 
+
+###### config.toml 
 ```
-config.toml - all information about registered runners on this machine
-output_limit - maximum size in bytes of stored logs in jobs
+all information about registered runners on this machine
 ```
+###### output_limit 
 ```
-! Anything that exceeds the output_limit threshold will not be logged and will not be displayed in
+maximum size in bytes of stored logs in jobs
 ```
-###### job information.
+
+###### ! Anything that exceeds the output_limit threshold will not be logged and will not be displayed in job information.
+
 
 
 ### Gitlab-ci.yml
@@ -613,33 +601,6 @@ associated with it succeed.
 throw an error message in the Gitlab console.
 ```
 
-### Resources
-
-**https://habr.com/ru/company/psb/blog/583532/
-https://medium.com/maddevs-io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlab
-ci-d06f6c2f96dc
-https://blog.canopas.com/a-complete-guide-to-ios-app-auto-deployment-with-ci-cd-b5dc516ba4
-1d
-https://pac-pac.medium.com/how-to-auto-deploy-a-mobile-application-on-the-stores-with-gitlab-
-and-fastlane-608e44be3aac
-https://github.com/boytpcm123/gitlab-ci-fastlane/blob/master/README.md
-https://faun.pub/continuous-integration-in-ios-apps-using-gitlab-ci-11156f232087
-https://medium.com/@spkdrxw/ios-ci-cd-experiments-gitlab-runner-fastlane-swiftlint-9c07a4522
-d9e
-https://medium.com/@MjCodingCamp/setup-ci-cd-on-gitlab-for-ios-project-complete-guide-3d1
-24a0e51a7
-https://phanquanghoang.medium.com/using-gitlab-ci-cd-fastlane-for-ios-project-part-3-f710b61
-8da4a**
-
-**Gitlab CI + Bitrise CLI
-https://stevedao91.medium.com/gitlab-ci-bitrise-cli-lower-cost-more-flexibility-85a2b756417e**
-
-**Firebase App Distribution**
-
-###### https://medium.com/@ryanisnhp/firebase-app-distribution-and-fastlane-5303c17b4395
-
-
-## THANK YOU
 
 
 Developed By
