@@ -16,8 +16,6 @@ You can find instructions to get up gitlab-runner on the report and offitial doc
 
 ## What's contained in this project
 
-this project contains
-
 -swift lint scripts
 
 -fastlane scripts for process automation and distribution in firebase builds
