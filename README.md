@@ -289,6 +289,7 @@ high-level goals.
 ### Main advantages / disadvantages of CI/CD
 
 ###### Advantages
+```
 ● high speed of output of new functionality from the client's
 request to commissioning;
 ● the possibility of choosing the best option due to operational
@@ -304,8 +305,9 @@ organization;
 ● reducing manual testing and providing the ability to return to a
 previous version of the product in case of problems with the
 current build.
-
+```
 ###### Disadvantages
+```
 ● maintenance of CI/CD tools is an expensive investment;
 ● changes create a domino effect.
 ● One small change with CI/CD can affect several different
@@ -325,7 +327,7 @@ basically impossible
 quickly as possible. In this case, for example, the support service
 is practically not notified of upcoming changes and may not be
 able to cope with customer questions and complaints.
-
+```
 ### Platform selection
 
 ● **Self-hosted CI/CD solutions** require owning
