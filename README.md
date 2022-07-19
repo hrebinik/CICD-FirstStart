@@ -1,6 +1,7 @@
 # Introduction
 
-This is a template for getting started with iOS development using GitLab and [fastlane](https://fastlane.tools/).
+This is a [template](https://gitlab.chisw.us/artem.hrebinik/cicdprocess.git) for getting started with iOS development using GitLab and [fastlane](https://fastlane.tools/) and [firebase app distribution](https://firebase.google.com/docs/app-distribution/ios/distribute-console).
+This report dedicated to CI/CD concepts and how we can automate and simplify the deploy process!
 
 # Reference links
 
