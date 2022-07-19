@@ -271,6 +271,7 @@ Store.
 
 **To make CI/CD a reality, you need to automate everything that you can in the software delivery process and run it in a CI/CD
 pipeline.**
+```
 ● **Architect the system in a way that supports iterative releases**. Avoid tight coupling between components. Implement
 metrics that help detect issues in real-time.
 ● **Practice test-driven development to always keep the code in a deployable state**. Maintain a comprehensive and healthy
@@ -284,7 +285,7 @@ a wiki on how to deploy, it’s game over.
 ● **If you build it, you run it**. Autonomous engineering teams should be responsible for the quality and stability of the software
 they build. This breaks down the silos between traditional developers and operations groups, as they work together to achieve
 high-level goals.
-
+```
 
 ### Main advantages / disadvantages of CI/CD
 
