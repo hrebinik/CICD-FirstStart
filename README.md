@@ -22,7 +22,9 @@ you through everything you need to get up and running.
 
 this project contains
 -swift lint scripts
+
 -fastlane scripts for process automation and distribution in firebase builds
+
 -gitlab file containing steps and jobs to run with the local gitlab-runner.
 
 # Useful Links
