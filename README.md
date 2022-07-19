@@ -4,23 +4,40 @@ This is a [template](https://gitlab.chisw.us/artem.hrebinik/cicdprocess.git) for
 This report dedicated to CI/CD concepts and how we can automate and simplify the deploy process!
 
 # The content of the presentation:
-What is CI/CD?
+What is CI/CD?  
+
 What is Continuous integration?
+
 What is Continuous delivery?
+
 What is Continuous deployment?
+
 A deeper look into the CI/CD workflow
+
 Comparison of deployment cycles
+
 When to use ci/cd processes?
+
 The top benefits of CI/CD for iOS
+
 Best practices to remember for iOS CI/CD
+
 Some Tips
+
 Main advantages/disadvantages of CI/CD
+
 Platform selection
+
 Introducing the Fastlane automation tool
+
 Introducing the basic features of Fastlane
+
 GitLabCI teory/concepts
+
 Pipeline Rules
+
 Gitlab-runner set up
+
 Step-by-step instructions for deploying ios app with gitlab-runner and Fastlane and uploading the app to FirebaseAppDistribution
 
 # Reference links
