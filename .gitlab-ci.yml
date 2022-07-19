@@ -1,0 +1,36 @@
+stages:
+  - lint
+  - unit_tests
+  - deploy
+  
+variables:
+    LC_ALL: "en_US.UTF-8"
+    LANG: "en_US.UTF-8"
+
+before_script:
+    - pod install
+
+
+lint:
+    dependencies: []
+    stage: lint
+    script:
+        - fastlane lint
+    tags:
+        - ios_firebase
+
+unit_tests:
+    dependencies: []
+    stage: unit_tests
+    script:
+        - fastlane test
+    tags:
+        - ios_firebase
+
+deploy_job:
+    dependencies: []
+    stage: deploy
+    tags:
+        - ios_firebase
+    script:
+        - fastlane distribute_to_firebase
