@@ -22,13 +22,8 @@ you through everything you need to get up and running.
 This template contains a simple Food Tracker App based off of the [Start Developing iOS Apps (Swift) Lessons](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html). Where necessary the template has been upgraded to use Swift 4. The app displays a list of meals consisting of a name, rating, and photo. Users are able to add or edit a meal by navigating to a detail screen. The app also includes a lightweight solution for basic data persistence.
 
 # Useful Links
-[Explore Computer Vision APIs - WWDC 2020 - Videos](https://developer.apple.com/videos/play/wwdc2020/10673/)
-
-[Explore the Action & Vision app](https://developer.apple.com/videos/play/wwdc2020/10099/)
-
-[Building a Feature Rich App for Sports Analysis](https://developer.apple.com/documentation/vision/building_a_feature-rich_app_for_sports_analysis)
-
-[Identifying Trajectories in Video](https://developer.apple.com/documentation/vision/identifying_trajectories_in_video)
+[PDF Report](http://surl.li/cmayg)
+[Video Report](http://surl.li/cmaxe)
 
 Enjoy! :smile: 
 
