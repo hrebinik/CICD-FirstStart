@@ -127,9 +127,9 @@ Developed By
 * Hrebinik Artem, CHI Software
 * Kosyi Vlad, CHI Software
 
-License
---------
-Copyright 2020 CHI Software.
+## License
+
+Copyright 2021 CHI Software.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
